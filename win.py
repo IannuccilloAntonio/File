@@ -10,18 +10,19 @@ class Mywin(Tk):
     
         self.mainframe = ttk.Frame(self)
         self.mainframe.grid(column=0, row=0, sticky=(N,S,E,W))
-        p = Punto(10, 10)
-        p.x = StringVar()
-        p.y = StringVar()
+        self.p = Punto(10, 10)
+        x = StringVar()
+        y = StringVar()
 
         ttk.Label(self.mainframe, width=7, text="Punto_x:").grid(column=0, row=0, sticky=(E,))
-        self.p.x = ttk.Entry( self.mainframe, textvariable=self.p.x)
-        self.p.x.grid(column=1, row=0, sticky=(W,))
+        x_entry = ttk.Entry( self.mainframe, textvariable=x)
+        x_entry.grid(column=1, row=0, sticky=(W,))
 
         ttk.Label(self.mainframe, width=7, text="Punto_y:").grid(column=0, row=1, sticky=(E,))
-        self.p.y = ttk.Entry(self.mainframe, textvariable=self.p.y)
-        self.p.y.grid(column=1, row=1, sticky=(W,))
-
+        y_entry = ttk.Entry(self.mainframe, textvariable=y)
+        y_entry.grid(column=1, row=1, sticky=(W,))
+        
+        ttk.Button(self.mainframe, text= "Calcola la distanza") .grid(column=0, row=2, sticky=(W,))
         
     def start(self):
         self.mainloop()
