@@ -1,0 +1,30 @@
+#logo {
+ 
+ background-color:#c0c0c0;
+ width:100%; 
+ height:30%;
+ color:red;
+ border:5px solid #2f4f4f;
+ border-radius:20px;
+ text-align:center;
+}
+#logo2{
+ Width:20%;
+ height:7%;
+ float:left; 
+ background-color:green;
+ color:black;
+ border-radius:7px;
+ text-align:center;
+ margin-top:3px;
+}
+#logo3{
+ Width:20%;
+ height:7%;
+ float:left;
+ background-color:yellow;
+ color:black;
+ border-radius:7px;
+ text-align:center;
+ margin-top:3px; 
+}
